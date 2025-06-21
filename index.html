@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWIGA Summer School 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="nav-logo">KWIGA</div>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#speakers">Intervenants</a></li>
+                <li><a href="#courses">Cours</a></li>
+                <li><a href="#registration">Inscription</a></li>
+                <li><a href="#awards">Prix</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>KWIGA Summer School 2025</h1>
+                <p class="hero-date"><i class="fa-solid fa-calendar-days"></i> 10–17 Septembre 2025</p>
+                <p class="hero-location"><i class="fa-solid fa-location-dot"></i> Université du Lac Tanganyika</p>
+                <a href="#registration" class="cta-btn">S'inscrire maintenant</a>
+            </div>
+        </div>
+        <div class="hero-bg-img">
+            <!-- Placeholder for a related background image or illustration -->
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about-section container">
+            <h2>À propos de l'événement</h2>
+            <p>KWIGA Summer School est une semaine immersive dédiée au cloud computing, à la virtualisation, à la conteneurisation et à l'infrastructure moderne. Rejoignez des experts internationaux et développez vos compétences pour l'avenir du numérique.</p>
+        </section>
+        <section id="speakers" class="speakers-section container">
+            <h2>Intervenants</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pr. Daniel Hagimont">
+                    <h3>Pr. Daniel Hagimont</h3>
+                    <p>Toulouse, France</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Pr. Jean-Marc Menaud">
+                    <h3>Pr. Jean-Marc Menaud</h3>
+                    <p>Nantes, France</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Pr. David Bromberg">
+                    <h3>Pr. David Bromberg</h3>
+                    <p>Rennes, France</p>
+                </div>
+            </div>
+        </section>
+        <section id="courses" class="courses-section container">
+            <h2>Liste des Cours</h2>
+            <div class="courses-grid">
+                <div class="course-card"><i class="fa-brands fa-cloudversify"></i> Introduction au cloud computing</div>
+                <div class="course-card"><img src="images/vmware_logo.png" alt="VMware"> La virtualisation</div>
+                <div class="course-card"><img src="images/aws_logo.png" alt="AWS"> Gestion de VM dans un cloud IaaS</div>
+                <div class="course-card"><img src="images/docker_logo.png" alt="Docker"> La conteneurisation</div>
+                <div class="course-card"><i class="fa-solid fa-cubes"></i> Déploiement d'infrastructure avec Terraform</div>
+                <div class="course-card"><i class="fa-brands fa-kubernetes"></i> Déploiement d'application avec Kubernetes</div>
+            </div>
+        </section>
+        <section id="registration" class="registration-section container">
+            <h2>Inscription</h2>
+            <div class="registration-flex">
+                <div class="qr-code-container">
+                    <img src="images/registration_qr.png" alt="QR Code d'inscription" class="qr-code">
+                    <p>Scannez pour vous inscrire sur mobile</p>
+                </div>
+                <form id="registrationForm" class="registration-form" action="https://formspree.io/f/mnnvblak" method="POST">
+                    <label for="name">Nom complet :</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="institution">Institution :</label>
+                    <input type="text" id="institution" name="institution" required>
+                    <button type="submit" id="submitBtn">S'inscrire</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </section>
+        <section class="partners-section container">
+            <h2>Partenaires</h2>
+            <div class="partners-logos">
+                <img src="images/ult_logo.png" alt="ULT">
+                <img src="images/cubikl_logo.png" alt="CubikL">
+                <img src="images/ubuntu_logo.png" alt="Ubuntu Collectif">
+                <img src="images/ugl_logo.png" alt="UGL">
+                <!-- Add more related/partner images here if available -->
+            </div>
+        </section>
+        <section id="awards" class="awards-section container">
+            <h2>Prix & Récompenses</h2>
+            <div class="awards-flex">
+                <div class="award-card"><span>🥇</span> 1er Prix</div>
+                <div class="award-card"><span>🥈</span> 2ème Prix</div>
+                <div class="award-card"><span>🥉</span> 3ème Prix</div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section container">
+            <h2>Contact</h2>
+            <p><i class="fa-solid fa-phone"></i> +257 22243645</p>
+            <p><a href="http://www.ult.bi" target="_blank"><i class="fa-solid fa-globe"></i> www.ult.bi</a></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 KWIGA Summer School. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = this;
+            const submitBtn = document.getElementById('submitBtn');
+            const formMessage = document.getElementById('formMessage');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Envoi en cours...';
+            formMessage.className = 'form-message';
+            formMessage.innerHTML = '';
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                if (response.ok) {
+                    form.reset();
+                    formMessage.className = 'form-message success';
+                    formMessage.innerHTML = 'Merci pour votre inscription ! Vous recevrez bientôt un email de confirmation.';
+                } else {
+                    throw new Error('Erreur réseau');
+                }
+            } catch (error) {
+                formMessage.className = 'form-message error';
+                formMessage.innerHTML = 'Désolé, une erreur est survenue. Veuillez réessayer plus tard.';
+            }
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'S\'inscrire';
+        });
+    </script>
+</body>
+</html> 
