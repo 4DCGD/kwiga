@@ -12,7 +12,12 @@
     <nav class="navbar">
         <div class="container nav-flex">
             <div class="nav-logo">KWIGA</div>
-            <ul class="nav-links">
+            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#speakers">Intervenants</a></li>
                 <li><a href="#courses">Cours</a></li>
@@ -120,6 +125,12 @@
         </div>
     </footer>
     <script>
+        // Hamburger menu toggle for mobile
+        document.getElementById('navToggle').addEventListener('click', function() {
+            var navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('open');
+        });
+        // Registration form submission
         document.getElementById('registrationForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             const form = this;
